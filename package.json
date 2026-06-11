@@ -1,0 +1,19 @@
+{
+  "name": "cosmos-3d",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "nuxt": "^3.13.0"
+  },
+  "dependencies": {
+    "three": "^0.168.0",
+    "gsap": "^3.12.5",
+    "@tresjs/core": "^4.2.0"
+  }
+}
