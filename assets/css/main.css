@@ -31,35 +31,30 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  scrollbar-width: auto; 
-  
-  /* 🌟 التعديل هنا: أضفنا لون الخلفية بعد لون المقبض */
-  scrollbar-color: var(--nebula-purple) var(--black); 
+  scrollbar-width: auto;
+
+  scrollbar-color: var(--nebula-purple) var(--black);
 }
 
-/* لمتصفحات Chrome, Safari, و Edge */
 ::-webkit-scrollbar {
-  width: 10px; 
-  height: 10px; 
+  width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--black); 
-  border-radius: 5px; 
+  background: var(--black);
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--nebula-purple); 
-  border-radius: 5px; 
-  /* إضافة تأثير انتقال ناعم عند التمرير بالماوس */
-  transition: background 0.3s ease; 
+  background: var(--nebula-purple);
+  border-radius: 5px;
+
+  transition: background 0.3s ease;
 }
 
-/* لون المقبض عند تمرير الماوس عليه (Hover) */
 ::-webkit-scrollbar-thumb:hover {
-  /* 💡 نصيحة: الـ box-shadow لا يعمل مباشرة على السكرول بار في webkit، 
-     الأفضل تغيير درجة اللون قليلاً أو استخدام الإضاءة لجعلها تلمع */
-  background: #b066ff; /* يمكنك استبدالها بدرجة أفتح من الموف الخاص بك */
+  background: #4c019b;
 }
 body {
   background: var(--void);
@@ -103,11 +98,11 @@ body {
   transform: scale(1.6);
   border-color: rgba(0, 240, 255, 0.7);
 }
-@media (max-width: 640px){
-  .cursor{
+@media (max-width: 640px) {
+  .cursor {
     display: none;
   }
-  .cursor-ring{
+  .cursor-ring {
     display: none;
   }
 }
@@ -524,10 +519,10 @@ section {
 }
 
 .skills-grid {
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-gap: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 .skill-item {
   width: calc(20% - 1.125rem);
@@ -658,11 +653,7 @@ gap: 0.5rem;
   position: absolute;
   inset: 0;
 
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.45),
-    transparent 60%
-  );
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.45), transparent 60%);
 
   pointer-events: none;
 }
@@ -1092,7 +1083,7 @@ footer a {
     padding: 0 4vw;
   }
   .hero-title {
-    font-size:2.2rem;
+    font-size: 2.2rem;
   }
   .about-card-grid,
   .skills-grid {
@@ -1103,7 +1094,7 @@ footer a {
   .details-content,
   .contact-left,
   .contact-form {
-padding-inline: 20px;
+    padding-inline: 20px;
   }
   .project-visual {
     height: 200px;
