@@ -43,7 +43,10 @@
       <!-- Error message -->
       <Transition name="fade">
         <div v-if="status === 'error'" class="form-status form-status--error">
-          ✕ {{ errorMessage || "Something went wrong. Please try again." }}
+          <span class="status-icon">✕</span>
+          <span class="status-text">
+            {{ errorMessage || "Something went wrong. Please try again." }}
+          </span>
         </div>
       </Transition>
 
@@ -140,16 +143,12 @@ const sendMessage = async () => {
   loading.value = true;
 
   try {
-    await emailjs.send(
-      EMAILJS_SERVICE_ID,
-      EMAILJS_TEMPLATE_ID,
-      {
-        name: form.name,
-        email: form.email,
-        title: "Portfolio Contact",
-        message: form.message,
-      }
-    );
+    await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+      name: form.name,
+      email: form.email,
+      title: "Portfolio Contact",
+      message: form.message,
+    });
 
     status.value = "success";
 
@@ -207,4 +206,40 @@ const contactLinks = [
 ];
 </script>
 
-<style scoped></style>
+<style scoped>
+/* الحاوية الأساسية للرسالة */
+.form-status {
+  margin-top: 1.25rem;
+  padding: 0.85rem 1.25rem;
+  border-radius: 12px;
+  font-family: var(--font-mono); /* استخدام الخط المونو ليعطي طابع تقني */
+  font-size: 0.9rem;
+  display: flex;
+  background:rgba(0, 255, 0, 0.329);
+  align-items: center;
+  gap: 10px;
+  backdrop-blur: 8px; /* تأثير زجاجي */
+  transition: all 0.3s ease;
+  animation: slideIn 0.4s ease-out;
+}
+
+/* استايل الخطأ (Error) */
+.form-status--error {
+  background: rgba(255, 45, 138, 0.1); /* شفافية من Nebula Pink */
+  color: var(--nebula-pink);
+  border: 1px solid rgba(255, 45, 138, 0.3);
+  box-shadow: 0 0 15px rgba(255, 45, 138, 0.15); /* هالة نيون خفيفة */
+}
+
+/* تأثير أنيميشن عند الظهور */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
