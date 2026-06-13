@@ -75,7 +75,14 @@ body {
   transform: scale(1.6);
   border-color: rgba(0, 240, 255, 0.7);
 }
-
+@media (max-width: 640px){
+  .cursor{
+    display: none;
+  }
+  .cursor-ring{
+    display: none;
+  }
+}
 /* ── Canvas & Overlays ──────────────────────── */
 #three-canvas {
   position: fixed;
@@ -141,7 +148,7 @@ section {
 }
 .badge-text {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 9px;
   color: var(--nebula-cyan);
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -291,6 +298,7 @@ section {
   grid-template-columns: 1.5fr 1fr;
   gap: 8vw;
   align-items: center;
+  justify-content: center;
 }
 .about-label {
   font-family: var(--font-mono);
@@ -301,7 +309,7 @@ section {
   margin-bottom: 1.5rem;
 }
 .about-title {
-  font-size: clamp(2rem, 4vw, 1rem);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 800;
   text-transform: uppercase;
 
@@ -321,6 +329,9 @@ section {
   padding: 3rem;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
   border-radius: 12px;
   transform: translateX(40px);
@@ -428,9 +439,9 @@ section {
   object-fit: cover;
 
   box-shadow:
-    0 0 30px rgba(168, 85, 247, 0.5),
-    0 0 60px rgba(236, 72, 153, 0.35),
-    0 0 90px rgba(34, 211, 238, 0.25);
+    0 0 20px rgba(168, 85, 247, 0.5),
+    0 0 20px rgba(236, 72, 153, 0.35),
+    0 0 20px rgba(34, 211, 238, 0.25);
   z-index: 1;
 }
 .about-card-content {
@@ -713,16 +724,30 @@ gap: 0.5rem;
 @media (max-width: 1024px) {
   .projects-grid {
     flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
   }
 
   .project-card {
     width: 100%;
+    min-width: 0;
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects {
+    padding: 8vh 4vw;
+  }
+
+  .project-card {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 768px) {
   .projects {
-    padding: 7vh 5vw;
+    padding: 7vh 4vw;
   }
 
   .project-visual {
@@ -735,6 +760,25 @@ gap: 0.5rem;
 
   .project-name {
     font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .projects {
+    padding: 6vh 3vw;
+  }
+
+  .project-card {
+    border-radius: 18px;
+    
+  }
+
+  .project-visual {
+    height: 180px;
+  }
+
+  .project-info {
+    margin: 1.25rem;
   }
 }
 /* ── Contact ─────────────────────────────────── */
@@ -769,7 +813,6 @@ gap: 0.5rem;
   border-bottom: 1px solid var(--border);
   text-decoration: none;
   cursor: none;
-  group: true;
   transition: padding 0.3s;
 }
 .contact-link:hover {
@@ -937,17 +980,64 @@ footer a {
 
 /* ── Responsive ─────────────────────────────── */
 @media (max-width: 900px) {
+  .hero {
+    padding: 0 5vw;
+  }
+  .hero-title {
+    font-size: clamp(2.5rem, 9vw, 6rem);
+  }
+  .hero-desc {
+    max-width: 100%;
+    font-size: 12px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
   .about {
+    padding: 12vh 5vw;
     grid-template-columns: 1fr;
   }
-  .contact {
-    grid-template-columns: 1fr;
+  .about-card {
+    margin-top: 3rem;
+    width: 100%;
+  }
+  .about-card-inner {
+    padding: 1.5rem;
+  }
+  .about-card-image {
+    width: 100%;
+    border-radius: 24px;
+  }
+  .about-card-content {
+    margin-top: 1.25rem;
+  }
+  .skills {
+    padding: 8vh 5vw;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .skill-item {
+    width: 100%;
+  }
+  .projects {
+    padding: 8vh 5vw;
   }
   .projects-grid {
+    flex-direction: column;
+  }
+  .project-card {
+    width: 100%;
+  }
+  .contact {
+    padding: 10vh 5vw;
     grid-template-columns: 1fr;
   }
-  .project-card:first-child {
-    grid-column: span 1;
+  .contact-form {
+    padding-top: 2rem;
   }
   .section-header {
     flex-direction: column;
@@ -957,8 +1047,46 @@ footer a {
   .nav-links {
     display: none;
   }
-  .hero-actions {
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 0 4vw;
+  }
+  .hero-title {
+    font-size:2.2rem;
+  }
+  .about-card-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-card-inner,
+  .project-info,
+  .details-content,
+  .contact-left,
+  .contact-form {
+padding-inline: 20px;
+  }
+  .project-visual {
+    height: 200px;
+  }
+  .project-name {
+    font-size: 1.25rem;
+  }
+  .form-field input,
+  .form-field textarea {
+    padding: 1.2rem 1rem;
+  }
+  .contact-left p,
+  .project-desc,
+  .details-desc,
+  .about-text {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  footer {
     flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
   }
 }

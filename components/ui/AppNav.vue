@@ -98,6 +98,8 @@
 
 <script setup>
 import { Icon } from "@iconify/vue";
+
+ const isMenuOpen = ref(false);
 </script>
 
 <style scoped>
