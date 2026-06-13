@@ -10,19 +10,19 @@
       <section v-if="project" class="project-details">
 
         <!-- Back link -->
-        <NuxtLink to="/projects" class="back-link">
+        <NuxtLink to="/projects" class="back-link reveal">
           <span class="back-arrow">←</span>
           <span>All Projects</span>
         </NuxtLink>
 
         <!-- Hero image -->
-        <div class="details-hero">
+        <div class="details-hero reveal">
           <img :src="project.image" :alt="project.name" class="details-hero-img" />
           <div class="details-hero-overlay"></div>
         </div>
 
         <!-- Content -->
-        <div class="details-content">
+        <div class="details-content reveal-left">
 
           <!-- Tags -->
           <div class="details-tags">
