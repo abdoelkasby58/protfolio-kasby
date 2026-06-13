@@ -9,11 +9,17 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "nuxt": "^3.13.0"
+    "@nuxtjs/tailwindcss": "^6.11.0",
+    "autoprefixer": "^10.4.0",
+    "nuxt": "^3.13.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0"
   },
   "dependencies": {
-    "three": "^0.168.0",
+    "@emailjs/browser": "^4.4.1",
+    "@iconify/vue": "^4.3.0",
+    "@tresjs/core": "^4.2.0",
     "gsap": "^3.12.5",
-    "@tresjs/core": "^4.2.0"
+    "three": "^0.168.0"
   }
 }
