@@ -3,7 +3,7 @@
     <div class="section-header">
       <div>
         <p class="section-label reveal">// Tech Stack</p>
-        <h2 class="section-title reveal">My Arsenal</h2>
+        <h2 class="section-title reveal">skills</h2>
       </div>
       <span class="section-count reveal">{{ skills.length }} Technologies</span>
     </div>
