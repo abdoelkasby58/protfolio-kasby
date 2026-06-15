@@ -13,7 +13,7 @@
       <li><a href="#contact" class="nav-link">contact</a></li>
       <li>
         <a
-          href="https://github.com/abdoelkasby58/CV/blob/main/AbdelrahimanElkasbyCV.pdf"
+          href="https://github.com/abdoelkasby58/cvnew/blob/main/AbdoElkasbyCV.pdf"
           aria-label="Download CV"
           class="nav-cta"
         >
@@ -85,7 +85,7 @@
 
           <a
             class="px-[1.5rem] py-3 border border-nebula-cyan text-nebula-cyan font-bold uppercase inline-block mt-4 hover:bg-nebula-cyan hover:text-void transition-all w-fit"
-            href="https://github.com/abdoelkasby58/CV/blob/main/AbdelrahimanElkasbyCV.pdf"
+            href="https://github.com/abdoelkasby58/cvnew/blob/main/AbdoElkasbyCV.pdf"
             aria-label="Download CV"
           >
             my cv
