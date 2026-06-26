@@ -89,7 +89,7 @@
             aria-label="Download CV"
           >
             my cv
-          </a>
+          </a> 
         </div>
       </div>
     </transition>
