@@ -57,7 +57,7 @@
 const stats = [
   { value: "1", suffix: "+", label: "Years Experience" },
   { value: "8", suffix: "+", label: "Projects Shipped" },
-  { value: "15", suffix: "+", label: "Happy Clients" },
+ 
   { value: "∞", suffix: "", label: "Lines of Code" },
 ];
 </script>
