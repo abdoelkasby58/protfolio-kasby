@@ -47,6 +47,8 @@ const skills = [
   { name: "Bootstrap", icon: "logos:bootstrap", color: "#7952B3", level: 66 },
   { name: "Vue.js", icon: "logos:vue", color: "#42B883", level: 79 },
   { name: "Nuxt.js", icon: "logos:nuxt-icon", color: "#00DC82", level: 65 },
+{ name: "React.js", icon: "logos:react", color: "#61DAFB", level: 65 },
+{ name: "Next.js", icon: "logos:nextjs-icon", color: "#FFFFFF", level: 65 },
 
   { name: "GSAP", icon: "simple-icons:greensock", color: "#88CE02", level: 69 },
   { name: "Git", icon: "logos:git-icon", color: "#F05032", level: 70 },
@@ -56,7 +58,7 @@ const skills = [
     name: "Design Systems",
     icon: "mdi:view-dashboard-outline",
     color: "#FF6B6B",
-    level: 80,
+    level: 70,
   },
 
   {
