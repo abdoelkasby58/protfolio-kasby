@@ -13,7 +13,7 @@
       <li><a href="#contact" class="nav-link">contact</a></li>
       <li>
         <a
-          href="https://github.com/abdoelkasby58/CV-ATS/blob/main/Abdelrahiman_Elkasby_CV_ATS.pdf"
+          href="https://github.com/abdoelkasby58/cv/blob/main/CV-Abdo-Elkasby.pdf"
           aria-label="Download CV"
           class="nav-cta"
         >
@@ -85,11 +85,11 @@
 
           <a
             class="px-[1.5rem] py-3 border border-nebula-cyan text-nebula-cyan font-bold uppercase inline-block mt-4 hover:bg-nebula-cyan hover:text-void transition-all w-fit"
-            href="https://github.com/abdoelkasby58/CV-ATS/blob/main/Abdelrahiman_Elkasby_CV_ATS.pdf"
+            href="https://github.com/abdoelkasby58/cv/blob/main/CV-Abdo-Elkasby.pdf"
             aria-label="Download CV"
           >
             my cv
-          </a> 
+          </a>
         </div>
       </div>
     </transition>
@@ -99,7 +99,7 @@
 <script setup>
 import { Icon } from "@iconify/vue";
 
- const isMenuOpen = ref(false);
+const isMenuOpen = ref(false);
 </script>
 
 <style scoped>

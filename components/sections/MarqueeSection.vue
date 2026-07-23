@@ -4,6 +4,8 @@
       <template v-for="_ in 2" :key="_">
         <span class="marquee-item solid">Vue</span><span class="marquee-sep">✦</span>
         <span class="marquee-item">Nuxt</span><span class="marquee-sep">✦</span>
+        <span class="marquee-item solid">React</span><span class="marquee-sep">✦</span>
+        <span class="marquee-item">Next</span><span class="marquee-sep">✦</span>
         <span class="marquee-item solid">html/css</span><span class="marquee-sep">✦</span>
         <span class="marquee-item">javascript</span><span class="marquee-sep">✦</span>
         <span class="marquee-item solid">gsap</span><span class="marquee-sep">✦</span>
