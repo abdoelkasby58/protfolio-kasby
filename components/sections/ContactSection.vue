@@ -105,35 +105,26 @@
   </section>
 </template>
 <script setup>
-import { ref, reactive, onMounted } from "vue";
+import { ref, reactive } from "vue";
 import emailjs from "@emailjs/browser";
 
 // EmailJS Config
-const EMAILJS_SERVICE_ID = "service_5p5kt67";
+const EMAILJS_SERVICE_ID = "service_9sporgu";
 const EMAILJS_TEMPLATE_ID = "template_24bcuwg";
-const EMAILJS_PUBLIC_KEY = "xhIm1-XLs47f8fi-k";
-
-// Init EmailJS
-onMounted(() => {
-  emailjs.init({
-    publicKey: EMAILJS_PUBLIC_KEY,
-  });
-});
+const EMAILJS_PUBLIC_KEY = "MBXRSw7__Zp9mAmIa";
 
 const loading = ref(false);
 const status = ref("");
 const errorMessage = ref("");
-
 const form = reactive({
   name: "",
   email: "",
   message: "",
 });
-
 const sendMessage = async () => {
   status.value = "";
   errorMessage.value = "";
-
+  //Check form
   if (!form.name || !form.email || !form.message) {
     status.value = "error";
     errorMessage.value = "Please fill in all fields.";
@@ -141,17 +132,28 @@ const sendMessage = async () => {
   }
 
   loading.value = true;
-
+  // Get current time
+  const sentAt = new Date();
+  const submittedAt = sentAt.toLocaleString("ar-EG", {
+    dateStyle: "medium",
+    timeStyle: "short",
+  });
   try {
-    await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-      name: form.name,
-      email: form.email,
-      title: "Portfolio Contact",
-      message: form.message,
-    });
+    await emailjs.send(
+      EMAILJS_SERVICE_ID,
+      EMAILJS_TEMPLATE_ID,
+      {
+        name: form.name,
+        email: form.email,
+        title: "Portfolio Contact",
+        message: form.message,
+        time: submittedAt,
+      },
+      EMAILJS_PUBLIC_KEY,
+    );
 
     status.value = "success";
-
+    // Clear form
     form.name = "";
     form.email = "";
     form.message = "";
@@ -215,10 +217,10 @@ const contactLinks = [
   font-family: var(--font-mono); /* استخدام الخط المونو ليعطي طابع تقني */
   font-size: 0.9rem;
   display: flex;
-  background:rgba(0, 255, 0, 0.329);
+  background: rgba(0, 255, 0, 0.329);
   align-items: center;
   gap: 10px;
-  backdrop-blur: 8px; /* تأثير زجاجي */
+  backdrop-filter: blur(8px);
   transition: all 0.3s ease;
   animation: slideIn 0.4s ease-out;
 }
