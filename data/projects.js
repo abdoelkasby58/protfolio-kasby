@@ -1,4 +1,4 @@
-import EgyptReallEstateDashboard from "~/assets/imgs/egypt-real-estate-dashboard.webp";
+import EgyptReallEstateDashboard from "~/assets/imgs/Egypt-Real-Estate-dashboard.webp";
 import EgyptRealEstate from "~/assets/imgs/egyptrealestate.webp";
 import Slimedo from "~/assets/imgs/slimedo.webp";
 import KasbCars from "~/assets/imgs/kasbcars.webp";
