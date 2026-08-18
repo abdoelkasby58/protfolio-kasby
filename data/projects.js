@@ -1,4 +1,4 @@
-import EgyptRealEstateDashboard from "~/assets/imgs/egypt-real-estate-dashboard.webp";
+import EgyptReallEstateDashboard from "~/assets/imgs/egypt-real-estate-dashboard.webp";
 import EgyptRealEstate from "~/assets/imgs/egyptrealestate.webp";
 import Slimedo from "~/assets/imgs/slimedo.webp";
 import KasbCars from "~/assets/imgs/kasbcars.webp";
@@ -12,7 +12,7 @@ const projects = [
 {
   slug: "egypt-real-estate-dashboard",
   name: "Egypt Real Estate Dashboard",
-  image: EgyptRealEstateDashboard,
+  image: EgyptReallEstateDashboard,
   desc: "Modern real estate dashboard with interactive analytics, responsive layouts, smooth animations, and a clean user experience.",
   details:
     "A modern real estate dashboard built with Vue.js, featuring property management, interactive charts and analytics, responsive layouts, smooth GSAP animations, and an intuitive interface for monitoring real estate data and insights.",
