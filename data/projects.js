@@ -9,27 +9,26 @@ import AgeCalculator from "~/assets/imgs/age.webp";
 import NourATM from "~/assets/imgs/nourtam.webp";
 import CRUDApp from "~/assets/imgs/crud.webp";
 const projects = [
-{
-  slug: "egypt-real-estate-dashboard",
-  name: "Egypt Real Estate Dashboard",
-  image: EgyptReallEstateDashboard,
-  desc: "Modern real estate dashboard with interactive analytics, responsive layouts, smooth animations, and a clean user experience.",
-  details:
-    "A modern real estate dashboard built with Vue.js, featuring property management, interactive charts and analytics, responsive layouts, smooth GSAP animations, and an intuitive interface for monitoring real estate data and insights.",
-  tags: [
-    { name: "Vue.js", color: "#42B883" },
-    { name: "GSAP", color: "#88CE02" },
-    { name: "Three.js", color: "#E5E7EB" },
-    { name: "Tailwind CSS", color: "#06B6D4" },
-    { name: "Pinia", color: "#FFD859" },
-    { name: "Vue Router", color: "#42B883" },
-    { name: "Vue i18n", color: "#8B5CF6" },
-    { name: "Chart.js", color: "#FF6384" },
-    { name: "Iconify", color: "#1769FF" },
-  ],
-  link: "https://github.com/abdoelkasby58/EgyprRealEstateDashboard",
-  liveLink: "https://egypr-real-estate-dashboard.vercel.app/",
-},
+  {
+    slug: "egypt-real-estate-dashboard",
+    name: "Egypt Real Estate Dashboard",
+    image: EgyptReallEstateDashboard,
+    desc: "Modern real estate dashboard with interactive analytics, responsive layouts, smooth animations, and a clean user experience.",
+    details:
+      "A modern real estate dashboard built with Vue.js, featuring property management, interactive charts and analytics, responsive layouts, smooth GSAP animations, and an intuitive interface for monitoring real estate data and insights.",
+    tags: [
+      { name: "Vue.js", color: "#42B883" },
+      { name: "GSAP", color: "#88CE02" },
+      { name: "Tailwind CSS", color: "#06B6D4" },
+      { name: "Pinia", color: "#FFD859" },
+      { name: "Vue Router", color: "#42B883" },
+      { name: "Vue i18n", color: "#8B5CF6" },
+      { name: "Chart.js", color: "#FF6384" },
+      { name: "Iconify", color: "#1769FF" },
+    ],
+    link: "https://github.com/abdoelkasby58/EgyprRealEstateDashboard",
+    liveLink: "https://egypr-real-estate-dashboard.vercel.app/",
+  },
   {
     slug: "egypt-real-estate",
     name: "Egypt Real Estate",
