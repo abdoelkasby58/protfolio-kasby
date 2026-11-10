@@ -13,7 +13,7 @@
       <li><a href="#contact" class="nav-link">contact</a></li>
       <li>
         <a
-          href="https://github.com/abdoelkasby58/cv/blob/main/Abdelrahiman_Elkasby_CV1.pdf"
+          href="https://github.com/abdoelkasby58/cv/blob/main/Abdelrahiman_Elkasby_CV2.pdf"
           aria-label="Download CV"
           class="nav-cta"
         >
