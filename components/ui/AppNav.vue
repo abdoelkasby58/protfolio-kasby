@@ -15,6 +15,7 @@
         <a
           href="https://github.com/abdoelkasby58/cv/blob/main/Abdelrahiman_Elkasby_CV2.pdf"
           aria-label="Download CV"
+           target="_blank"
           class="nav-cta"
         >
           My CV
@@ -87,6 +88,7 @@
             class="px-[1.5rem] py-3 border border-nebula-cyan text-nebula-cyan font-bold uppercase inline-block mt-4 hover:bg-nebula-cyan hover:text-void transition-all w-fit"
             href="https://github.com/abdoelkasby58/cv/blob/main/Abdelrahiman_Elkasby_CV2.pdf"
             aria-label="Download CV"
+            target="_blank"
           >
             my cv
           </a>
